@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background-color: black;
+}
+
+.container {
+    height: 80vh;
+    display: flex;
+    font-size: 100px;
+    font-family: monospace;
+    background-color: black;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    /* transition: color 2s; */
+    transition-property: all;
+    transition-duration: 2s;
+}
+.M{
+    font-size: 50px;
+    transition-property: all;
+    /* transition:; */
+    transition: font-size 2s;
+    /* animation-name: m;                 yaha pe ye bydefault chalega
+    animation-duration: 2s; */
+    opacity: 1;
+    animation-iteration-count: infinite;
+}
+@keyframes m{
+    0% {opacity: 0;}
+    33%{opacity: 0.35;}
+    63%{opacity: 0.65;}
+    100% {opacity: 1;}
+}
+.M:hover{
+    /* color: red; */
+    font-size: 200px;
+    animation-name: m;
+    color: #00FFFF ;
+    opacity: 0;
+    animation-duration: 3s;
+}
+.I{
+    /* font-size: 100px; */
+    /* transition-property: all; */
+    transition-duration: 2s;
+}
+.I:hover{
+    transform: rotate(1080deg) ;
+    color: #39FF14;
+}
+.T{
+    transition-property: all;
+    transition: 2s , transform 2s;
+    /* transition-duration: 2s , transform 2s; */
+    transform: rotateX(180deg);
+}
+.T:hover{
+    transform: translate(0px , 60px);
+    /* animation-name: t; */
+    /* animation-duration:  2s; */
+    color: #FF69B4;
+}
+.E{
+    font-size: 200px;
+    transition-property: all;
+    transition: 2s,transform 2s;
+    transition-duration: 2s;
+    transform: rotate(540deg);
+    
+}
+.E:hover{
+    transform: rotate(180deg);
+    font-size: 50px;
+    color: #FFD700;
+    
+}
+.S{
+    /* animation: bounce 0.5s; */
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transition-property: all;
+    transition-duration: 2s;
+}
+@keyframes s{                                                                           
+    from { transform: translate3d(0, 0, 0);}
+    to { transform: translate3d(0, -100px, 0);}
+}
+ /* from{transform: translateY(0);}                     alternative for above idea
+    to{transform: translateY(100px);} */
+.S:hover{
+    animation-name: s;
+    animation-duration: 0.5s;
+    color: #FF7F50;
+}
+.H{
+    font-size: 100px;
+    /* animation-direction: alternate; */
+    animation-iteration-count: infinite;
+    transition-property: all;
+    transition-duration: 3s;
+}
+@keyframes h{
+    /* from{transform: translate3d(0,0,0);}
+    to{transform: translate3d(-100px , -100px , -100px);} */
+    /* from{transform: translateZ(0);}
+    to{transform: translateZ(100px);} */
+    0% {font-size: 100px;}
+    50% {font-size: 60px;}
+    /* 66% {font-size: 200px;} */
+    100% {font-size: 200px;}
+}
+.H:hover{
+    animation-name: h;
+    color: #2b2b2d;
+    animation-duration: 3s;
+    /* border:1px solid white; */
+}
